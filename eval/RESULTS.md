@@ -8,7 +8,7 @@ Reproduce: `make recall`.
 
 | Retriever | top-1 | top-2 | top-3 | top-4 | top-5 |
 |---|---|---|---|---|---|
-| Sparse (BM25-style) | 19 | 20 | 21 | 22 | 22 |
+| Sparse (TF-IDF) | 19 | 20 | 21 | 22 | 22 |
 | Dense (static vectors) | 9 | 12 | 15 | 17 | 18 |
 | **Hybrid** | 18 | 20 | 22 | **22** | 22 |
 
