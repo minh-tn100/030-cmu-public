@@ -1,0 +1,68 @@
+[
+ {
+  "claim_id": "C01",
+  "asi_id": "ASI01",
+  "verdict": "gap",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C02",
+  "asi_id": "ASI02",
+  "verdict": "gap",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C03",
+  "asi_id": "ASI03",
+  "verdict": "gap",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C04",
+  "asi_id": "ASI04",
+  "verdict": "gap",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C05",
+  "asi_id": "ASI05",
+  "verdict": "ok",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C06",
+  "asi_id": "ASI06",
+  "verdict": "gap",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C07",
+  "asi_id": "ASI07",
+  "verdict": "ok",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C08",
+  "asi_id": "ASI08",
+  "verdict": "gap",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C09",
+  "asi_id": "ASI09",
+  "verdict": "ok",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C10",
+  "asi_id": "ASI10",
+  "verdict": "gap",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ },
+ {
+  "claim_id": "C11",
+  "asi_id": null,
+  "verdict": "not_assessed",
+  "label_source": "author self-assigned (BankX_Design_DRAFT.md, approved 2026-11-02)"
+ }
+]

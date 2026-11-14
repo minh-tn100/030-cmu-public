@@ -1,0 +1,27 @@
+# environments and secrets
+.venv/
+venv/
+.env
+.env.*
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# run outputs (committed sample run lives in eval/live-20261114/)
+out/
+out-*/
+*.sqlite
+eval/results_*.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# local-only notes, not part of the public repo
+docs/*.pdf

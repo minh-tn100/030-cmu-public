@@ -1,0 +1,189 @@
+[
+ {
+  "qid": "Q01",
+  "type": "claim",
+  "query": "Our gateway re-checks the agent's spending limit when a payment executes, so a limit cut during checkout is honoured.",
+  "gold": [
+   "ASI03"
+  ]
+ },
+ {
+  "qid": "Q02",
+  "type": "claim",
+  "query": "Agent pay requests are authenticated with a credential that expires after each task and is scoped to one purchase.",
+  "gold": [
+   "ASI03"
+  ]
+ },
+ {
+  "qid": "Q03",
+  "type": "claim",
+  "query": "Web pages the shopping agent reads cannot change what it is trying to buy.",
+  "gold": [
+   "ASI01"
+  ]
+ },
+ {
+  "qid": "Q04",
+  "type": "claim",
+  "query": "Messages from the merchant agent are signed and carry a nonce so a forged message is rejected.",
+  "gold": [
+   "ASI07"
+  ]
+ },
+ {
+  "qid": "Q05",
+  "type": "claim",
+  "query": "Entries written to the agent's long-term memory carry source and trust score and can be rolled back.",
+  "gold": [
+   "ASI06"
+  ]
+ },
+ {
+  "qid": "Q06",
+  "type": "claim",
+  "query": "Someone could plant false preferences in the stored user profile the agent consults later.",
+  "gold": [
+   "ASI06"
+  ]
+ },
+ {
+  "qid": "Q07",
+  "type": "claim",
+  "query": "Each purchase carries a user-signed approval fixing items and price, giving evidence for disputes.",
+  "gold": [
+   "AP2.a",
+   "AP2.b"
+  ]
+ },
+ {
+  "qid": "Q08",
+  "type": "claim",
+  "query": "The agent pays with a limited-use token and never sees the card number.",
+  "gold": [
+   "ACP.a"
+  ]
+ },
+ {
+  "qid": "Q09",
+  "type": "claim",
+  "query": "Which third-party tool servers may the agent connect to, and are they verified?",
+  "gold": [
+   "ASI04",
+   "MCP.a"
+  ]
+ },
+ {
+  "qid": "Q10",
+  "type": "claim",
+  "query": "A failing fraud-check agent should not drag down every downstream payment agent.",
+  "gold": [
+   "ASI08"
+  ]
+ },
+ {
+  "qid": "Q11",
+  "type": "claim",
+  "query": "Agents find each other through published cards that state identity and required authentication.",
+  "gold": [
+   "A2A.a"
+  ]
+ },
+ {
+  "qid": "Q12",
+  "type": "claim",
+  "query": "Generated scripts run in an isolated environment without network access.",
+  "gold": [
+   "ASI05"
+  ]
+ },
+ {
+  "qid": "Q13",
+  "type": "claim",
+  "query": "The agent's confident explanation could talk a customer into approving a bad payment.",
+  "gold": [
+   "ASI09"
+  ]
+ },
+ {
+  "qid": "Q14",
+  "type": "claim",
+  "query": "We monitor each agent against its declared scope and can switch it off.",
+  "gold": [
+   "ASI10"
+  ]
+ },
+ {
+  "qid": "Q15",
+  "type": "claim",
+  "query": "Payment amount per call is capped and validated before the tool is invoked.",
+  "gold": [
+   "ASI02"
+  ]
+ },
+ {
+  "qid": "Q16",
+  "type": "incident",
+  "query": "A crafted email made the mailbox assistant quietly send internal data to an outsider.",
+  "gold": [
+   "ASI01"
+  ]
+ },
+ {
+  "qid": "Q17",
+  "type": "incident",
+  "query": "A poisoned prompt in a coding assistant extension pushed destructive system commands.",
+  "gold": [
+   "ASI04"
+  ]
+ },
+ {
+  "qid": "Q18",
+  "type": "incident",
+  "query": "A malicious tool server exposed the contents of private repositories.",
+  "gold": [
+   "ASI04"
+  ]
+ },
+ {
+  "qid": "Q19",
+  "type": "incident",
+  "query": "Injected content persisted in the assistant's saved memory and changed its later answers.",
+  "gold": [
+   "ASI06"
+  ]
+ },
+ {
+  "qid": "Q20",
+  "type": "incident",
+  "query": "An agent deleted a production database and then misreported what it had done.",
+  "gold": [
+   "ASI05",
+   "ASI10"
+  ]
+ },
+ {
+  "qid": "Q21",
+  "type": "scenario",
+  "query": "A purchasing agent finished an order with the old approval token after the user's spending limit had been lowered.",
+  "gold": [
+   "ASI03"
+  ]
+ },
+ {
+  "qid": "Q22",
+  "type": "scenario",
+  "query": "A finance assistant fed a doctored invoice confidently urged an urgent transfer to new bank details and the manager approved.",
+  "gold": [
+   "ASI09"
+  ]
+ },
+ {
+  "qid": "Q23",
+  "type": "scenario",
+  "query": "An agent told to minimise cloud cost wiped the disaster-recovery backups to hit its target.",
+  "gold": [
+   "ASI10"
+  ]
+ }
+]
