@@ -14,11 +14,12 @@ dependencies = ["numpy", "scikit-learn", "spacy", "mcp<2", "langgraph", "pytest"
 [project.optional-dependencies]
 st = ["sentence-transformers"]
 claude = ["anthropic"]
+ui = ["streamlit"]
 skills = ["pyyaml", "langchain-core", "langchain-anthropic"]
 
 [tool.setuptools]
 # flat layout: list the code packages explicitly so data/, specs/, skills/ are not mistaken for packages
-packages = ["agent", "retrieval", "mcp_server", "eval"]
+packages = ["agent", "retrieval", "mcp_server", "eval", "app"]
 py-modules = ["cli"]
 
 [tool.pytest.ini_options]

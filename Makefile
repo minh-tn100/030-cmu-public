@@ -4,7 +4,7 @@ PY := $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 BOOTSTRAP ?= $(shell for p in python3.13 python3.12 python3.11 python3.10 python3; do \
 	command -v $$p >/dev/null 2>&1 && $$p -c 'import sys; sys.exit(sys.version_info < (3, 10))' 2>/dev/null && { echo $$p; break; }; done)
 
-.PHONY: setup check-python test recall recall-st eval demo-stub demo-claude clean
+.PHONY: setup check-python test recall recall-st eval demo-stub demo-claude ui clean
 
 setup:
 	@test -n "$(BOOTSTRAP)" || { echo "error: need Python >= 3.10 on PATH (e.g. brew install python@3.12)"; exit 1; }
@@ -34,6 +34,9 @@ demo-stub: check-python        # no key, no network: out-stub/report.html
 
 demo-claude: check-python      # needs ANTHROPIC_API_KEY: out-claude/{report.html,RESULTS.md,audit.jsonl}
 	$(PY) cli.py review --llm claude --compare --max-calls 100 --out out-claude && $(PY) -m eval.report_eval out-claude
+
+ui: check-python               # optional extra: pip install -e ".[ui]"
+	$(PY) -m streamlit run app/ui.py
 
 clean:
 	rm -rf out-stub out-claude .pytest_cache
