@@ -4,7 +4,7 @@
 
 Capstone project, CMU Agentic AI program (2026). All inputs are synthetic (a fictional "Bank X") or public standards. No real bank's data or systems are used.
 
-> **Status:** working end to end. 71 offline tests pass; one live run with Claude on 2026-11-14 matched the author's labels on verdict **and** control for 9 of 11 claims, with zero false assurance and zero failed calls. See [`eval/RESULTS.md`](eval/RESULTS.md).
+> **Status:** working end to end. 76 offline tests pass; one live run with Claude on 2026-11-14 matched the author's labels on verdict **and** control for 9 of 11 claims, with zero false assurance and zero failed calls. See [`eval/RESULTS.md`](eval/RESULTS.md).
 
 ---
 
@@ -61,7 +61,7 @@ Requires **Python 3.10+** (the macOS system `python3` is 3.9 and will not work).
 ```bash
 git clone https://github.com/minh-tn100/030-cmu-public.git designbench && cd designbench
 make setup        # creates .venv, installs deps + spaCy model (needs network once)
-make test         # 71 tests, offline, no API key
+make test         # 76 tests, offline, no API key
 make demo-stub    # full review with a deterministic stub model -> out-stub/report.html
 ```
 
@@ -107,7 +107,7 @@ Retrieval (offline): hybrid recall@4 = 22/23; the abstain gate stops 3 of 5 out-
 | `retrieval/` | Sparse + dense hybrid index, static or sentence embedder, gate |
 | `data/` | Synthetic Bank X design and claims, labels, impact ratings, standards corpus |
 | `eval/` | Recall, agent eval, run evaluator; `RESULTS.md`; sample live run in `live-20261114/` |
-| `tests/` | 71 tests (offline; fake and stub models) |
+| `tests/` | 76 tests (offline; fake and stub models) |
 | `specs/` | Vision brief and feature PRDs for the build |
 | `skills/`, `agent/skills.py`, `agent/skill_agent.py` | Post-capstone extension: an assistant that loads skills on demand. The review agent does not get this tool. |
 

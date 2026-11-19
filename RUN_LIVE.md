@@ -4,7 +4,7 @@ Use your own Anthropic API key and **synthetic data only**. Requires Python 3.10
 
 ```bash
 make setup                                # .venv + dependencies + spaCy model
-make test                                 # 71 tests, offline
+make test                                 # 76 tests, offline
 make demo-stub                            # offline fallback, no key: out-stub/report.html
 export ANTHROPIC_API_KEY=...              # never write it into a file in the repo
 export DB_JUDGE_MODEL=claude-sonnet-5-5   # planner, hint, judge, option designer
